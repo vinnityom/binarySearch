@@ -1,0 +1,25 @@
+{
+  "name": "binarysearch",
+  "version": "0.0.1",
+  "description": "binary search for index of specified element",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinnityom/binarySearch.git"
+  },
+  "author": "Artyom Sukharev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinnityom/binarySearch/issues"
+  },
+  "homepage": "https://github.com/vinnityom/binarySearch#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "jest": "^24.8.0"
+  }
+}
