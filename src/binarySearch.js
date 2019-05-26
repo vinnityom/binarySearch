@@ -3,14 +3,14 @@ export default (numbers, numberToSearchFor) => {
     return null;
   }
 
-  const iter = (arr, currentIndex) => {  
+  const iter = (arr, currentIndex) => {
     if (arr.length === 1) {
       return arr[0] === numberToSearchFor ? currentIndex : null;
     }
 
     const halfWay = Math.floor(arr.length / 2);
     const [halfWithElem, newIndex] = arr[halfWay] > numberToSearchFor
-      || (arr[halfWay] === numberToSearchFor && arr[halfWay] === arr[halfWay - 1])
+      || (arr[halfWay] === arr[halfWay - 1] && arr[halfWay - 1] === numberToSearchFor)
       ? [arr.slice(0, halfWay), currentIndex]
       : [arr.slice(halfWay), currentIndex + halfWay];
 
