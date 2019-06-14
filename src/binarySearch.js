@@ -9,8 +9,7 @@ export default (numbers, numberToSearchFor) => {
     }
 
     const halfWay = Math.floor(arr.length / 2);
-    const [halfWithElem, newIndex] = arr[halfWay] > numberToSearchFor
-      || (arr[halfWay] === arr[halfWay - 1] && arr[halfWay - 1] === numberToSearchFor)
+    const [halfWithElem, newIndex] = arr[halfWay - 1] >= numberToSearchFor
       ? [arr.slice(0, halfWay), currentIndex]
       : [arr.slice(halfWay), currentIndex + halfWay];
 
